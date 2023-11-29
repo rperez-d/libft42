@@ -10,9 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c) 
+#include "libft.h"
+
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 126)
-        return(1);
-    return (0);  // En el conjunto ASCII, los caracteres imprimibles están en el rango 32-126.
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

@@ -10,20 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//esta es la función que debería de poner según enel man 
+// esta es la función que debería de poner según enel man
 #include "libft.h"
 
-size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
 	i = 0;
-	if(dstsize == 0)
+	if (dstsize == 0)
 	{
 		i = ft_strlen(src);
 		return (i);
 	}
-	while (src[i] != '\0' && i < dstsize -1)
+	while (src[i] != '\0' && i < dstsize - 1)
 	{
 		dst[i] = src[i];
 		i++;
@@ -42,4 +42,3 @@ int main  (){
 	printf("%s\n", final);
 	return (0);
 }*/
-

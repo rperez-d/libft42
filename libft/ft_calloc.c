@@ -12,32 +12,26 @@
 
 #include "libft.h"
 
-void    *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-    char *str;
+	char	*str;
 
-    str = (char *)malloc(count * size);
-    if(str == NULL)
-        return (NULL);
-    ft_bzero(str, count);
-    return (str);
-    //ft_calloc(10, sizeof(char));
-    
+	str = (char *)malloc(count * size);
+	if (str == NULL)
+		return (NULL);
+	ft_bzero(str, count);
+	return (str);
 }
 
 /*
-int main(void)
+int	main(void)
 {
-    char *str;
-    
-    int tamano = 20;
-    
-    str = (char *)malloc(tamano * sizeof(char));
+	char	*str;
+	int		tamano;
+	int		*entero;
 
-
-    int *entero;
-    entero = (int *)malloc(10*sizeof(int));
+	tamano = 20;
+	str = (char *)malloc(tamano * sizeof(char));
+	entero = (int *)malloc(10*sizeof(int));
 }
 */
-
-
